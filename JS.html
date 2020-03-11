@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Siteuri care nu sunt responsive</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/web-dev-not-res.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/scroll-bar.css">
+        <link rel="icon" href="/faviconn.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Pagini non responsive, in aceasta pagina sunt afisate doar paginile pe care le-am scris in trecut dar in care nu am folosit librari online.">
+        <meta name="keywords" content="HTML,CSS,Proiect Blanaos, siteuri non responsive">
+        <meta name="author" content="Cucu Toma Daniel">
+        <script src="jquery-content.jquery"></script> 
+    </head>
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+        $('#navbar').load('navbar.html');
+        $('#footer').load('footer-html.html');
+        //$('#nota').load('nota.html');
+        });
+     </script>
+
+
+
+    <body>
+
+     <div id="navbar"></div>
+
+
+
+         <div class="hero-image">
+            <img src="img/hero-img-web-dev-not-res.jpg" alt="noi doi" class="hero-img">
+            <p class="text-img"> Specially dedicated page for applications created in JS </p>
+
+        </div>
+
+       <div class="content">
+            <h1>The first applications in Javascript</h1>
+           
+           
+         <div class="content-1">
+            <div >
+                <img src="img/buget.JPG" class="img-proiecte">
+                <h3>Budget calculator</h3>
+                <p>This application calculates your budget for a given month by collecting the revenue and lowering the expenses. To mention, the application is made in pure JS. Pressing F5 all data disappears</p>
+            <form>
+                  <input class="button" type="button" target="_blank" value="See Application" onclick="window.location.href='https://danieltomacucu.github.io/Budget-project/'" />
+             </form>
+            </div>
+              <div >
+                <img src="img/pig-game.JPG" class="img-proiecte">
+                <h3>Pig Game</h3>
+                <p>Pig game is actually the first application / game in JS, working on it I learned better how the DOM works and how it is manipulated by JS</p>
+               <form>
+                  <input class="button" type="button" value="See Application" onclick="window.location.href='https://danieltomacucu.github.io/Pig-game/'" />
+               </form>
+            </div>
+              <div >
+                <img src="img/vreme.JPG" class="img-proiecte">
+                <h3>Application weather </h3>
+                <p>In this application weather I used an API to pull all the useful information from a dedicated server.Technologies used: JS, Ajax, api, HTML, CSS of course </p>
+                  
+                 <form>
+                  <input class="button" type="button" target="_blank" value="See Application" onclick="window.location.href='https://danieltomacucu.github.io/First-Try/'" />
+                </form>
+            </div>
+
+             
+          
+        </div>
+        </div>
+          <div id="nota"></div>
+          <div id="footer"></div>
+
+    </body>
+</html>

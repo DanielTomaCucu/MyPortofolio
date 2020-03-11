@@ -1,0 +1,135 @@
+    <html>
+        <head>
+            <title> Acasa -- Site blanao</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="css/index.css">
+            <link rel="stylesheet" type="text/css" href="css/footer.css">
+            <link rel="stylesheet" type="text/css" href="css/navbar.css">
+            <link rel="stylesheet" type="text/css" href="css/scroll-bar.css">
+            <link rel="icon" href="/faviconn.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+            <meta name="description" content="Acasa -- Site dedicat listarii site-urilor reate de mine de la inceputuri pana acum.">
+            <meta name="keywords" content="HTML,CSS,Proiect Blanaos,">
+            <meta name="author" content="Cucu Toma Daniel">
+            <script src="jquery-content.jquery"></script> 
+        </head>
+
+      <script type="text/javascript">
+            $(document).ready(function(){
+            $('#navbar').load('navbar.html');
+            $('#footer').load('footer-html.html');
+            //$('#nota').load('nota.html');
+            });
+         </script>
+        
+        
+        <style>
+
+          
+        </style>
+
+        <body>
+<script>
+var Webflow = Webflow || [];
+Webflow.push(function() {
+
+  // Load cookie library
+  $.getScript('https://cdn.rawgit.com/js-cookie/js-cookie/v2.1.2/src/js.cookie.js', function() {
+
+    // If cookie found (already shown)
+    if(Cookies.get('notice') !== undefined) {
+
+      // Hide cookie notice (change jQuery selector to match your own)
+      $('.modal-wrapper').remove();
+    }
+
+    // On button click
+    $('.modal-wrapper').click(function() {
+      // Calculate when you want to display the notice again (change 15 to number of minutes you want)
+      var expireTime = new Date(new Date().getTime() + 60000 * 60 * 24 * 60);
+      // Set this cookie
+      Cookies.set('notice', 'shown', { expires: expireTime });
+    });
+  });
+
+});
+</script>
+        <div id="navbar"></div>
+
+
+            <div class="hero-image">
+                <img src="img/hero-image-1.jpg" alt="noi doi" class="hero-img">
+                <p class="text-img"> My Portofolio?</p>
+            </div>
+            <div class='my'>
+              <div class="text">
+                <p><h1>Who am I?</h1><br>
+                  Let's talk a little about who I am.
+                  I am 21 years old, computer science student and I like to develop applications / websites.
+                  That's all.
+                  I started creating sites from the time I was in high school. You can see the <b>'Web Dev'</b> page. There I put a small part of the sites we create in the beginning.
+                  Over time I learned what it means for a site to be responsive. You can see this in the pad <b>'Web Dev Res'</b>
+                  I recently started learning vanilla and Javascript, you can see the few applications in the <b>Java Script</b> page.
+                  <br><br>
+                  <h2>More detalis about me?</h2>
+                </p>
+                <div class=buttons> 
+                  <a href="https://github.com/DanielTomaCucu"><p >GitHub</p></a>
+                  <a href="https://www.linkedin.com/in/cucu-toma-daniel-896710162/"><p class="doi">LinkedIn</p></a>
+              </div>
+              </div>
+              <div class="img">
+                <img class ='eu-img'src="img/cucu Toma daniel.jpg">
+              </div>
+              
+
+            </div>
+            <div class="content1">
+                <h1>How I learned web development?</h1>
+                <div class="ambele">
+
+                    <div class="prima">
+                        <img src="img/responsive-site.png" class="hero-img1">
+                       <h3>My first responsive sites</h3>
+                        <p>This section contains only a small portion of the sites that are responsive. </p>
+                        <p>They were created using online libraries or frameworks such as Bootstrap and jQuery</p>
+                        <form>
+                          <input class="button" type="button" value="See Resources" onclick="window.location.href='web-dev.html'" />
+                       </form>
+                    </div>
+                     <div class="adoua">
+                        <img src="img/udacity.png" class="hero-img1">
+                       <h3>What courses did I take</h3>
+                        <p>In this section I tried to fit the courses followed on the Udemy and Udacity platforms.  </p>
+                        <p>These helped me a lot to understand and learn a lot of useful things in web development </p>
+                    <form>
+                        <input class="button" type="button" value="See Resources" onclick="window.location.href='cursuri.html'" />
+                   </form>
+                    </div>
+
+                      <div class="atreia">
+                        <img src="img/bootstrap4.jpg" class="hero-img1">
+                       <h3>My first sites created</h3>
+                        <p>As they all got started, this section contains some sites that I created long ago and they looked pretty decent  </p>
+                        <p>
+                          At that time I didn't know how to create responsive sites or use libraries or frameworks to make my work easier.</p>
+                    <form>
+                      <input class="button" type="button" value="See Resources" onclick="window.location.href='web-dev-not-res.html'" />
+                   </form>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div id="nota"></div>
+              <div id="footer"></div>
+
+
+
+      </body>
+    </html>
